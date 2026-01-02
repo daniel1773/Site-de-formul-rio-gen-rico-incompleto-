@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <img src="../Imagens/paisagem noite bonita.jpg" alt="paisagem noite bonita" id="img">
+
+    <form action="">
+        <h2>Formulário Genérico</h2>
+        
+        <div id="container_nome_pais">
+            <!--Nome do usuário-->
+            <div class="container">
+                <p class="subtitulo">Nome de usuário</p>
+                <input type="text">
+            </div>
+
+            <!--Selecionar país (usar select)-->
+            <div class="container">
+                <p class="subtitulo">País</p>
+                <select name="pais" id="pais">
+                    <option value="none" disabled selected hidden>...</option>
+                    <option value="alemanha">Alemanha</option>
+                    <option value="bolivia">Bolívia</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="canada">Canadá</option>
+                    <option value="eua">EUA</option>
+                    <option value="franca">França</option>
+                    <option value="portugal">Portugal</option>
+                </select>
+            </div>
+        </div>
+        
+        <!--Selecionar tipo de comida-->
+        <div class="container">
+            <p class="subtitulo">Tipo de comida</p>
+            <div id="opcoes_tipo_comida">
+                <div class="radio_input">
+                    <input type="radio" id="radio_salgada" name="tipo_comida" value="salgada">
+                    <label for="radio_salgada">Salgada</label>
+                </div>
+                
+                <div class="radio_input">
+                    <input type="radio" id="radio_doce" name="tipo_comida" value="doce">
+                    <label for="radio_doce">Doce</label>
+                </div>
+
+                <div class="radio_input">
+                    <input type="radio" id="radio_agridoce" name="tipo_comida" value="agridoce">
+                    <label for="radio_agridoce">Agridoce</label>
+                </div>
+
+                <div class="radio_input">
+                    <input type="radio" id="radio_picante" name="tipo_comida" value="picante">
+                    <label for="radio_picante">Picante</label>
+                </div>
+            </div>
+        </div>
+
+        <!--Selecionar jogo favorito-->
+        <div class="container">
+            <p class="subtitulo">Jogo Favorito</p>
+            <input type="text" id="jogo" name="jogo">
+        </div>
+
+
+        <button type="submit" id="finalizar_form">Finalizar</button>
+    </form>
+
+</body>
+</html>

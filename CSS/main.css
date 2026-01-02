@@ -1,0 +1,101 @@
+/*Base*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'times new roman';
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    position: fixed;
+    z-index: 1;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.347);
+    border: 2px solid rgba(19, 22, 167, 0.637);
+    border-radius: 4px;
+    margin: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#img {
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+}
+
+/*Título*/
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*Partes do form*/
+.container {
+    margin-top: 20px;
+}
+#container_nome_pais {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.subtitulo {
+    font-size: 18px;
+    background-color: rgba(95, 19, 128, 0.308);
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-flex;
+}
+
+.radio_input {
+    background-color: rgba(245, 245, 245, 0.333);
+    color: black;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.radio_input:hover {
+    background-color: rgba(188, 188, 188, 0.333);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    margin-top: 5px;
+}
+
+#opcoes_tipo_comida {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/*Botoes do form*/
+#finalizar_form {
+    width: 200px;
+    height: 40px;
+    transform: translate(-50%);
+    margin-top: 10px;
+    margin-left: 50%;
+    font-weight: 800;
+    background-color: brown;
+    color: whitesmoke;
+}
+#finalizar_form:hover {
+    font-weight: 800;
+    background-color: rgb(144, 37, 37);
+    color: rgb(229, 229, 229);
+    cursor: pointer;
+}
