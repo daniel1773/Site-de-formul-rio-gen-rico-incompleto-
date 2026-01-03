@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="../CSS/main.css">
 </head>
 <body>
+    <div id="botao_historico"><a href="historico.html">Ver histórico de envios</a></div>
+
     <img src="../Imagens/paisagem noite bonita.jpg" alt="paisagem noite bonita" id="img">
 
-    <form action="">
+    <form method="post" action="">
         <h2>Formulário Genérico</h2>
         
         <div id="container_nome_pais">
             <!--Nome do usuário-->
             <div class="container">
                 <p class="subtitulo">Nome de usuário</p>
-                <input type="text">
+                <input type="text" placeholder="Daniel Alves">
             </div>
 
             <!--Selecionar país (usar select)-->
             <div class="container">
                 <p class="subtitulo">País</p>
                 <select name="pais" id="pais">
-                    <option value="none" disabled selected hidden>...</option>
+                    <option value="none" disabled selected hidden>Selecione..</option>
                     <option value="alemanha">Alemanha</option>
                     <option value="bolivia">Bolívia</option>
                     <option value="brasil">Brasil</option>
@@ -40,23 +42,23 @@
             <p class="subtitulo">Tipo de comida</p>
             <div id="opcoes_tipo_comida">
                 <div class="radio_input">
-                    <input type="radio" id="radio_salgada" name="tipo_comida" value="salgada">
-                    <label for="radio_salgada">Salgada</label>
+                    <input type="radio" class="radio_tipo_comida" name="tipo_comida" value="salgada">
+                    <label for="radio_salgada" class="label_tipo_comida">Salgada</label>
                 </div>
                 
                 <div class="radio_input">
-                    <input type="radio" id="radio_doce" name="tipo_comida" value="doce">
-                    <label for="radio_doce">Doce</label>
+                    <input type="radio" class="radio_tipo_comida" name="tipo_comida" value="doce">
+                    <label for="radio_doce" class="label_tipo_comida">Doce</label>
                 </div>
 
                 <div class="radio_input">
-                    <input type="radio" id="radio_agridoce" name="tipo_comida" value="agridoce">
-                    <label for="radio_agridoce">Agridoce</label>
+                    <input type="radio" class="radio_tipo_comida" name="tipo_comida" value="agridoce">
+                    <label for="radio_agridoce" class="label_tipo_comida">Agridoce</label>
                 </div>
 
                 <div class="radio_input">
-                    <input type="radio" id="radio_picante" name="tipo_comida" value="picante">
-                    <label for="radio_picante">Picante</label>
+                    <input type="radio" class="radio_tipo_comida" name="tipo_comida" value="picante">
+                    <label for="radio_picante" class="label_tipo_comida">Picante</label>
                 </div>
             </div>
         </div>
@@ -64,7 +66,7 @@
         <!--Selecionar jogo favorito-->
         <div class="container">
             <p class="subtitulo">Jogo Favorito</p>
-            <input type="text" id="jogo" name="jogo">
+            <input type="text" id="jogo" name="jogo" placeholder="Super Mario Bros">
         </div>
 
 
